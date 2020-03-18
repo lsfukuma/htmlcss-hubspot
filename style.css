@@ -40,6 +40,10 @@
     font-weight: bold;
 }
 
+#header-top-left p {
+    display: inline-block;
+}
+
 #header-top-right {
     margin: auto;
     width: 50%;
@@ -124,25 +128,113 @@ a {
 }
 
 #section1-left {
-    margin: auto;
-    width: 40%;
+    margin: left;
+    width: 50%;
     height: 600px;
     background-color: #FFF2EE;
     float: left;
     color: #33475b;
-    padding: 10%;
 }
 
 #section1-left h1 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 900;
+    padding: 10%;
+}
+
+#section1-left p {
     padding-left: 10%;
+    letter-spacing: 0,5px;
+
+}
+
+#section1-left button {
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    margin: 5% 10%;
+}
+
+#section1-left p:nth-of-type(2) {
+    width: 50%;
+    font-size: 13px;
 }
 
 #section1-right {
     margin: auto;
-    width: 60%;
+    width: 50%;
     height: 600px;
     background-color: #FFF2EE;
+    float: left;
+}
+
+#footer {
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+    background-color: #33475B;
+}
+
+#footer-top-collumn1 {
+    margin: auto;
+    width: calc((100%)/4);
+    background-color: white;
+    height: 400px;
+    float: left;
+}
+
+#footer-top-collumn2 {
+    margin: auto;
+    width: calc((100%)/4);
+    background-color: blue;
+    height: 400px;
+    float: left;
+}
+
+#footer-top-collumn3 {
+    margin: auto;
+    width: calc((100%)/4);
+    background-color: yellow;
+    height: 400px;
+    float: left;
+}
+
+#footer-top-collumn4 {
+    margin: auto;
+    width: calc((100%)/4);
+    background-color: yellow;
+    height: 400px;
+    float: left;
+}
+
+#footer-top-bottom {
+    margin: auto;
+    width: 100%;
+    background-color: purple;
+    height: 100px;
+    float: left;
+}
+
+#footer-top-bottom {
+    margin: auto;
+    width: 100%;
+    background-color: purple;
+    height: 100px;
+    float: left;
+}
+
+#footer-bottom-left {
+    margin: auto;
+    width: 50%;
+    background-color: pink;
+    height: 100px;
+    float: left;
+}
+
+#footer-bottom-right {
+    margin: auto;
+    width: 100%;
+    background-color: orange;
+    height: 100px;
     float: left;
 }
