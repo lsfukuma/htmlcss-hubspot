@@ -5,23 +5,22 @@
 }
 
 .container {
-    width: 1200px;
+    width: 100vw;
     border: 2px solid black;
-    height: 200px;
-
 }
 
 #header-top {
     margin: auto;
-    width: 100%;
+    max-width: 1200px;
     height: 100px;
     background-color: blue;
+
 }
 
 #header-bottom {
     margin: auto;
     height: 100px;
-    width: 100%;
+    max-width: 1200px;
     background-color: red;
 }
 
@@ -37,6 +36,44 @@
     margin: auto;
     width: 50%;
     height: 100px;
-    background-color: white;
+    background-color: yellow;
+    float: left;
+}
+#header-bottom-left {
+    margin: auto;
+    width: 20%;
+    height: 100px;
+    background-color: green;
+    float: left;
+}
+
+#header-bottom-right {
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}
+
+#section1{
+    max-width: 1200px;
+    height: 600px;
+    background-color: purple;
+    margin: auto;
+}
+
+#section1-left {
+    margin: auto;
+    width: 30%;
+    height: 600px;
+    background-color: coral;
+    float: left;
+}
+
+#section1-right {
+    margin: auto;
+    width: 70%;
+    height: 600px;
+    background-color: lightcyan;
     float: left;
 }
