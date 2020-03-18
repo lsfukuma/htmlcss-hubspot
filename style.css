@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    border: 2px solid black;
+    height: 200px;
+
+}
+
+#header-top {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+#header-bottom {
+    margin: auto;
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+#header-top-left {
+    margin: auto;
+    width: 50%;
+    height: 100px;
+    background-color: pink;
+    float: left;
+}
+
+#header-top-right {
+    margin: auto;
+    width: 50%;
+    height: 100px;
+    background-color: white;
+    float: left;
+}
