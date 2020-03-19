@@ -9,10 +9,14 @@
     border: 2px solid black;
 }
 
-.clearfix {
+.clearfix::after {
     content: ("");
     display: table;
     clear: both;
+}
+
+a {
+    text-decoration: none;
 }
 
 #header-top {
@@ -37,11 +41,16 @@
     height: 100px;
     float: left;
     color: #33475b;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 #header-top-left p {
     display: inline-block;
+    padding: 15px;
+}
+
+#null {
+    border-left: 1px solid #33475b;
 }
 
 #header-top-right {
@@ -51,20 +60,22 @@
     background-color: #F5F8FA;
     float: left;
     display: inline-block;
+    vertical-align: middle;
+
 }
 
-a {
-    text-decoration: none;
+#header-bottom-right a:visited {
+    color: #33475b;
 }
 
 .button {
     border-radius: 5px;
+    padding: 2%;
+    font-weight: 400;
     background-color: white;
     color: #ff7a59;
     border-color: #ff7a59;
-    padding: 2%;
     line-height: 100%;
-    font-weight: 400;
 }
 
 .orange-button {
@@ -74,6 +85,16 @@ a {
     padding: 2%;
     line-height: 100%;
     font-weight: 400;
+}
+
+#header-top-left i{
+    vertical-align: middle;
+    color: #33475b;
+}
+
+#header-top-right i {
+   vertical-align: middle;
+   color: #83D1DE;
 }
 
 #header-bottom-left {
@@ -107,6 +128,7 @@ a {
     right: 0;
     transform: translateY(-50%);
     padding: 10px;
+    text-decoration: none;
 }
 
 #header-bottom-right li{
@@ -175,10 +197,30 @@ a {
     background-color: #33475B;
 }
 
+#footer i {
+    font-size: 20px;
+    color: #cbd6e2;
+    padding: 3%;
+    margin-bottom: 10px;
+}
+
+#footer ul li {
+    text-decoration: none;
+    padding: 5%;
+    margin-left: auto;
+    list-style: none;
+    font-weight: bold;
+    color: #cbd6e2;
+}
+
+#footer h3 {
+    color: white;
+    padding: 5%;
+}
+
 #footer-top-collumn1 {
     margin: auto;
     width: calc((100%)/4);
-    background-color: white;
     height: 400px;
     float: left;
 }
@@ -186,7 +228,6 @@ a {
 #footer-top-collumn2 {
     margin: auto;
     width: calc((100%)/4);
-    background-color: blue;
     height: 400px;
     float: left;
 }
@@ -194,7 +235,6 @@ a {
 #footer-top-collumn3 {
     margin: auto;
     width: calc((100%)/4);
-    background-color: yellow;
     height: 400px;
     float: left;
 }
@@ -202,39 +242,58 @@ a {
 #footer-top-collumn4 {
     margin: auto;
     width: calc((100%)/4);
-    background-color: yellow;
     height: 400px;
     float: left;
 }
-
-#footer-top-bottom {
-    margin: auto;
-    width: 100%;
-    background-color: purple;
-    height: 100px;
-    float: left;
+/* IDEA: manca hover, magari fare una classe hover? */
+#btn-contact {
+    border-radius: 5px;
+    background-color: #cbd6e2;
+    color: #33475B;
+    padding: 3%;
+    line-height: 100%;
+    margin-right: 5%;
 }
 
 #footer-top-bottom {
-    margin: auto;
     width: 100%;
-    background-color: purple;
+    text-align: center;
     height: 100px;
     float: left;
+    border-bottom: 1px solid #cbd6e2;
+}
+
+#footer-top-bottom p{
+    margin: auto;
+    display: inline-block;
+    color: #cbd6e2;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1%;
+}
+
+#footer-top-bottom p:hover {
+    color: #7FD1DE;
+    cursor: pointer;
 }
 
 #footer-bottom-left {
     margin: auto;
     width: 50%;
-    background-color: pink;
     height: 100px;
     float: left;
 }
+/* IDEA: NON FUNZIONA */
+#footer-bottom-left img p::after {
+    color: #7FD1DE;
+    font-weight: lighter;
+}
 
 #footer-bottom-right {
-    margin: auto;
-    width: 100%;
+    margin-right: auto;
+    width: 50%;
     background-color: orange;
     height: 100px;
     float: left;
+    display: inline-block;
 }
