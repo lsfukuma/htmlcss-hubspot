@@ -31,7 +31,6 @@ a {
 
 #header-bottom {
     padding-top: 100px;
-    height: 200px;
     background-color: white;
 }
 
@@ -41,7 +40,7 @@ a {
     float: left;
     color: #33475b;
     font-weight: lighter;
-    padding: 25px;
+    padding-top: 25px;
 }
 
 #header-top #header-top-left:hover {
@@ -59,16 +58,13 @@ a {
 }
 
 #null {
-    border-left: 1px solid #33475b;
-    border-width: medium;
-    border-color: #CBD6E2;
-    size: 10px;
+    border-left: 0.5px solid #CBD6E2;
+    border-width: thin;
 }
 
 #header-top-right {
     width: 50%;
     height: 100px;
-    background-color: #F5F8FA;
     float: left;
     display: inline-block;
     padding: 30px;
@@ -104,7 +100,7 @@ a {
     color: white;
 }
 
-#header-top-left i{
+.fa-caret-down {
     vertical-align: middle;
     color: #33475b;
 }
@@ -112,6 +108,11 @@ a {
 #header-top-right i {
    vertical-align: middle;
    color: #83D1DE;
+   padding-right: 25px;
+}
+
+#header-top-right i:hover {
+    cursor: pointer;
 }
 
 #header-bottom-left {
@@ -154,25 +155,26 @@ a {
     color: #33475b;
     padding: 20px;
     font-weight: bold;
+
 }
 
-#header-bottom-right .logbutton:hover {
-    opacity: 1;
-    visibility: visible;
+.logbutton:hover, #header-top-right .orange-button:hover {
+    opacity: 0.6;
 }
+
 #section1 {
     height: 600px;
     background-color: #FFF2EE;
     background-image: url("img/Background.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 #section1-left {
     margin: left;
     width: 50%;
     height: 600px;
-    background-color: #FFF2EE;
     float: left;
     color: #33475b;
     padding-top: 10%;
@@ -183,6 +185,7 @@ a {
     font-size: 40px;
     font-weight: 900;
     padding-bottom: 5%;
+    z-index: 2;
 
 }
 
@@ -212,6 +215,7 @@ a {
     width: 50%;
     height: 600px;
     float: left;
+
 }
 
 #section2 {
@@ -345,7 +349,7 @@ a {
     height: 100px;
     float: left;
 }
-/* IDEA: NON FUNZIONA */
+/* IDEA: NON FUNZIONA bdcfhubudbvuebv$^p */
 #footer-bottom-left img p::after {
     color: #7FD1DE;
     font-weight: lighter;
