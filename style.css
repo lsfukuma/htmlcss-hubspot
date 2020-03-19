@@ -12,7 +12,7 @@
 }
 
 .clearfix::after {
-    content: ("");
+    content: "";
     display: table;
     clear: both;
 }
@@ -43,11 +43,11 @@ a {
     padding-top: 25px;
 }
 
-#header-top #header-top-left:hover {
+#header-top #header-top-left:hover, .orange-button:hover {
     cursor: pointer;
 }
 
-#header-top-left .fa-caret-down {
+#header-top-left .fa-caret-down, #header-bottom-right .fa-caret-down{
     color: #7C98B6;
     padding-right: 10px;
 }
@@ -155,15 +155,13 @@ a {
     color: #33475b;
     padding: 20px;
     font-weight: bold;
-
 }
 
 .logbutton:hover, #header-top-right .orange-button:hover {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 #section1 {
-    height: 600px;
     background-color: #FFF2EE;
     background-image: url("img/Background.png");
     background-size: cover;
@@ -185,8 +183,6 @@ a {
     font-size: 40px;
     font-weight: 900;
     padding-bottom: 5%;
-    z-index: 2;
-
 }
 
 #section1-left p {
@@ -211,58 +207,111 @@ a {
 }
 
 #section1-right {
-    margin: auto;
     width: 50%;
     height: 600px;
     float: left;
-
 }
-
+/* IDEA: PARTE 3 del sito -- services */
 #section2 {
-    height: 700px;
+    padding-top: 5%;
+    padding-bottom: 10%;
     background-color: #f5f8fa;
 }
 
+#section2-top {
+    height: 400px;
+    background-color: pink;
+}
+
+#section2 h3 {
+    text-transform: uppercase;
+    color: #33475B;
+    font-size: 13px;
+}
+
+#section2 p {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+
+.circle::before {
+    content: "\f058";
+    font-family: FontAwesome;
+    color: #ff7a59;
+}
+
 #section2-top-left{
-    height: 350px;
     width: calc(100%/3);
-    background-color: red;
     float: left;
+    color: #33475B;
 }
 
 #section2-top-right{
-    height: 350px;
     width: calc((100%/3)*2);
-    background-color: pink;
     float: left;
+    color: #33475B;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#section2-top-right-inline {
+    display: inline-block;
+}
+
+#section2-bottom {
+    height: 400px;
 }
 
 #section2-bottom-left {
-    height: 350px;
     width: calc(100%/3);
-    background-color: blue;
     float: left;
+    color: #33475B;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
 }
 
 #section2-bottom-middle {
-    height: 350px;
     width: calc(100%/3);
-    background-color: yellow;
     float: left;
+    color: #33475B;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
 }
 
 #section2-bottom-right {
-    height: 350px;
     width: calc(100%/3);
-    background-color: purple;
     float: left;
+    color: #33475B;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
 }
 
+/* attention: il manque l'effet hover sur les images -- faut chercher lequel est le plus adapte
+PUIS: il faut voir pourquoi les bouttons sortent de la boite... je comprends rien  */
+.btnsec2 {
+    padding: 20px;
+    font-size: 15
+    px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* IDEA: PARTE 4 - VERDE GRADIENTE - advantages of this service */
 #section3 {
     height: 700px;
     background-image: linear-gradient(45deg, #00a4bd, #00bda5);
 }
-
+/* IDEA: PARTE 5 - customers and testimonials */
+#section4 {
+    height: 800px;
+    background-color: #fff;
+}
+/* IDEA: FOOTER */
 #footer {
     height: 600px;
     background-color: #33475B;
@@ -319,7 +368,7 @@ a {
     color: #33475B;
     padding: 3%;
     line-height: 100%;
-    margin-right: 5%;
+    padding-left: 10px;
 }
 
 #footer-top-bottom {
@@ -338,7 +387,7 @@ a {
     padding: 1%;
 }
 
-#footer-top-bottom p:hover {
+#footer-bottom-right p:hover ,#footer-top-bottom p:hover {
     color: #7FD1DE;
     cursor: pointer;
 }
@@ -349,17 +398,25 @@ a {
     height: 100px;
     float: left;
 }
-/* IDEA: NON FUNZIONA bdcfhubudbvuebv$^p */
-#footer-bottom-left img p::after {
-    color: #7FD1DE;
-    font-weight: lighter;
+
+#footer-bottom-left p:nth-child(2) {
+    color: #FFF;
+    font-size: 12px;
+    padding-top: 10px;
 }
 
 #footer-bottom-right {
     margin-right: auto;
     width: 50%;
-    background-color: orange;
     height: 100px;
     float: left;
-    display: inline-block;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#footer-bottom-right p{
+    padding: 10%;
+    display:inline-block;
+    text-align: right;
+    margin-right: 20px;
 }
