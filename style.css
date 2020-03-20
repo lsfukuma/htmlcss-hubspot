@@ -349,12 +349,13 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     padding-bottom: 10px;
 }
 
-#section3-table {
-    margin-top: 10px;
-    width: 100%;
-    border: 1px solid white;
+.section3-middle {
+    width: calc((100%/4)-10%);
+    display: inline-block;
+    border: 0.1px solid white;
     text-align: center;
-    padding: 10%;
+    padding: 3%;
+    margin-top: 10px;
 }
 
 .piu {
