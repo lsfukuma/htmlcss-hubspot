@@ -27,6 +27,7 @@ a {
     border: 1px solid #CBD6E2;
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 
 #header-bottom {
@@ -46,6 +47,7 @@ a {
 #header-top #header-top-left:hover, .orange-button:hover {
     cursor: pointer;
 }
+
 
 #header-top-left .fa-caret-down, #header-bottom-right .fa-caret-down{
     color: #7C98B6;
@@ -220,7 +222,6 @@ a {
 
 #section2-top {
     height: 400px;
-    background-color: pink;
 }
 
 #section2 h3 {
@@ -234,7 +235,6 @@ a {
     padding-bottom: 2.5%;
 }
 
-
 .circle::before {
     content: "\f058";
     font-family: FontAwesome;
@@ -245,6 +245,8 @@ a {
     width: calc(100%/3);
     float: left;
     color: #33475B;
+    padding: 5%;
+    padding-left: 0;
 }
 
 #section2-top-right{
@@ -254,42 +256,55 @@ a {
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
+    padding: 5%;
 }
 
-#section2-top-right-inline {
+#section2-top-right p {
     display: inline-block;
+    padding: 5%;
+    padding-left: 0;
 }
 
 #section2-bottom {
     height: 400px;
 }
-
+/* IDEA: pensare come fare una classe per tutti questi div - attributi uguali x tt */
 #section2-bottom-left {
-    width: calc(100%/3);
+    width: 30%;
     float: left;
     color: #33475B;
     border: 1px solid white;
     border-radius: 10px;
     position: relative;
+    background-color: white;
+    padding: 5%;
+    margin-right: 5%;
+
 }
 
 #section2-bottom-middle {
-    width: calc(100%/3);
+    width: 30%;
     float: left;
     color: #33475B;
     border: 1px solid white;
     border-radius: 10px;
     position: relative;
+    background-color: white;
+    padding: 5%;
+    margin-right: 5%;
 }
 
 #section2-bottom-right {
-    width: calc(100%/3);
-    float: left;
+    width: 30%;
+    float: right;
     color: #33475B;
     border: 1px solid white;
     border-radius: 10px;
     position: relative;
+    background-color: white;
+    padding: 5%;
 }
+
 
 /* attention: il manque l'effet hover sur les images -- faut chercher lequel est le plus adapte
 PUIS: il faut voir pourquoi les bouttons sortent de la boite... je comprends rien  */
@@ -419,4 +434,22 @@ PUIS: il faut voir pourquoi les bouttons sortent de la boite... je comprends rie
     display:inline-block;
     text-align: right;
     margin-right: 20px;
+}
+
+#chat {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 2%;
+    left: 95%;
+    background-color: #33475B;
+    text-align: center;
+}
+
+#chat img {
+    width: 50%;
+    height: 50%;
+    border: 2px solid white;
+    border-radius: 50%;
+
 }
