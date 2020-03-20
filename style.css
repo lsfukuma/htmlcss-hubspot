@@ -94,7 +94,6 @@ a {
     background-color: #ff7a59;
     color: white;
     padding: 15px;
-    line-height: 100%;
     font-weight: 400;
 }
 
@@ -213,15 +212,14 @@ a {
     height: 600px;
     float: left;
 }
-/* IDEA: PARTE 3 del sito -- services */
+
+/* IDEA: PARTE 3 del sito -- services
+quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scrittura */
+
 #section2 {
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     background-color: #f5f8fa;
-}
-
-#section2-top {
-    height: 400px;
 }
 
 #section2 h3 {
@@ -233,6 +231,13 @@ a {
 #section2 p {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    font-weight: 100;
+}
+
+#section2 hr{
+    color: #EBEEF3;
+    font-weight: 100;
+    margin:10px 0px 10px 0px;
 }
 
 .circle::before {
@@ -257,6 +262,7 @@ a {
     border-radius: 10px;
     background-color: white;
     padding: 5%;
+    margin-bottom: 1%;
 }
 
 #section2-top-right p {
@@ -265,12 +271,15 @@ a {
     padding-left: 0;
 }
 
-#section2-bottom {
-    height: 400px;
+#section2-top-right hr {
+    float: right;
+    color: #EBEEF3;
+    font-weight: 100;
+    width: 78%;
 }
-/* IDEA: pensare come fare una classe per tutti questi div - attributi uguali x tt */
-#section2-bottom-left {
-    width: 30%;
+
+.section2-bottom {
+    width: 32.6%;
     float: left;
     color: #33475B;
     border: 1px solid white;
@@ -278,49 +287,70 @@ a {
     position: relative;
     background-color: white;
     padding: 5%;
-    margin-right: 5%;
-
-}
-
-#section2-bottom-middle {
-    width: 30%;
-    float: left;
-    color: #33475B;
-    border: 1px solid white;
-    border-radius: 10px;
-    position: relative;
-    background-color: white;
-    padding: 5%;
-    margin-right: 5%;
+    margin-right: 1%;
 }
 
 #section2-bottom-right {
-    width: 30%;
+    width: 32.6%;
     float: right;
     color: #33475B;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     position: relative;
     background-color: white;
     padding: 5%;
 }
 
-
-/* attention: il manque l'effet hover sur les images -- faut chercher lequel est le plus adapte
-PUIS: il faut voir pourquoi les bouttons sortent de la boite... je comprends rien  */
 .btnsec2 {
     padding: 20px;
-    font-size: 15
-    px;
+    font-size: 15px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
+
+.section2-bottom:hover,#section2-bottom-right:hover, #section2-top-right:hover {
+    transform: scale(1.03);
+}
+/* IDEA: Non va -- mettere spazio dopo i pulsanti */
+.btnsec2::after {
+    margin-bottom: 300px;
+}
+
+
 /* IDEA: PARTE 4 - VERDE GRADIENTE - advantages of this service */
 #section3 {
-    height: 700px;
+    height: 1000px;
     background-image: linear-gradient(45deg, #00a4bd, #00bda5);
 }
+
+#section3 h2, #section3 h1{
+    color: #fff;
+}
+
+#section3 p {
+    color: #fff;
+    font-weight: 100;
+    padding: 10%;
+}
+
+#section3-top {
+    width: 90%;
+    text-align:center;
+    padding: 10%;
+    padding-bottom: 10px;
+}
+
+.section3-middle {
+    width: calc((100%/4)-10%);
+    display: inline-block;
+    border: 1px solid white;
+    text-align: center;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+
 /* IDEA: PARTE 5 - customers and testimonials */
 #section4 {
     height: 800px;
@@ -435,7 +465,7 @@ PUIS: il faut voir pourquoi les bouttons sortent de la boite... je comprends rie
     text-align: right;
     margin-right: 20px;
 }
-
+/* IDEA: Chatbox outside body */
 #chat {
     width: 40px;
     height: 40px;
