@@ -320,14 +320,13 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 
 /* IDEA: PARTE 4 - VERDE GRADIENTE - advantages of this service */
 #section3 {
-    height: 1000px;
     background-image: linear-gradient(45deg, #00a4bd, #00bda5);
 }
 
 #section3 h1{
     color: #fff;
     font-size: 40px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.5px;
 }
 
 #section3 h2{
@@ -343,33 +342,79 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 }
 
 #section3-top {
-    width: 90%;
+    width: 100%;
     text-align:center;
-    padding: 10%;
+    padding: 5%;
     padding-bottom: 10px;
 }
 
 .section3-middle {
-    width: calc((100%/4)-10%);
-    display: inline-block;
-    border: 0.1px solid white;
+    width: calc(100%/4);
+    float: left;
     text-align: center;
     padding: 3%;
-    margin-top: 10px;
+    border-left: 1px solid white;
+}
+
+/* IDEA: utilizzare il not */
+#section3-5, #section3-1 {
+    border-left: 1px solid #00A8BA;
 }
 
 .piu {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
     vertical-align: middle;
+}
+
+#section3-grid-top {
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+}
+
+#section3-grid-bottom {
+    border-bottom: 0px;
+    padding-bottom: 60px;
 }
 
 
 /* IDEA: PARTE 5 - customers and testimonials */
 #section4 {
+    padding-top: 100px;
     height: 800px;
     background-color: #fff;
 }
+
+#section4-top-left {
+    width: calc(100%/3);
+    background-color: lightgreen;
+    float: left;
+}
+
+#section4-top-right {
+    width: calc((100%/3)*2);
+    background-image: url("img/section4-img1.png");
+    background-position: right;
+    background-size: cover;
+    float: right;
+    height: 50px;
+}
+
+#section-top-right img {
+
+}
+
+#section4-bottom-left {
+    width: 50%;
+    float: left;
+
+}
+#section4-bottom-right {
+    width: 50%;
+    
+    float: right;
+}
+
 /* IDEA: FOOTER */
 #footer {
     height: 600px;
@@ -481,19 +526,13 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 }
 /* IDEA: Chatbox outside body */
 #chat {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     position: fixed;
     bottom: 2%;
     left: 95%;
     background-color: #33475B;
-    text-align: center;
-}
-
-#chat img {
-    width: 50%;
-    height: 50%;
-    border: 2px solid white;
     border-radius: 50%;
-
+    background-position: top;
+    text-align: center;
 }
