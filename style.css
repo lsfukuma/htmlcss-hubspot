@@ -69,11 +69,11 @@ a {
     float: left;
     display: inline-block;
     padding: 30px;
-    padding-left: 25%;
+    text-align: right;
 }
 
 #header-top-right button:nth-child(2){
-    padding-left: 5%;
+    margin-right: 5%;
 }
 
 #header-bottom-right a:visited {
@@ -114,7 +114,7 @@ a {
 #header-top-right i {
    vertical-align: middle;
    color: #83D1DE;
-   padding-right: 25px;
+   padding-right: 5%;
 }
 
 #header-top-right i:hover {
@@ -177,14 +177,14 @@ a {
 
 #section1-left {
     margin: left;
-    width: 50%;
+    width: 40%;
     float: left;
     padding-top: 10%;
     padding-bottom: 10%;
 }
 
 .title {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     padding-bottom: 5%;
     color: #33475b;
@@ -213,11 +213,6 @@ a {
     padding-top: 5%;
 }
 
-#section1-right {
-    width: 50%;
-    height: 600px;
-    float: left;
-}
 
 /* IDEA: PARTE 3 del sito -- services
 quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scrittura */
@@ -292,7 +287,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     border-radius: 10px;
     position: relative;
     background-color: white;
-    padding: 5%;
+    padding: 5% 5% 10% 5%;
     margin-right: 1%;
 }
 
@@ -304,25 +299,26 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     border-radius: 5px;
     position: relative;
     background-color: white;
-    padding: 5%;
+    padding: 5% 5% 10% 5%;
+
+}
+#btn-sec2-top {
+    padding: 2% 10% 2% 10%;
+    font-size: 15px;
 }
 
 .btnsec2 {
-    padding: 20px;
+    padding: 5% 13% 5% 13%;
     font-size: 15px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 10px;
 }
 
 .section2-bottom:hover,#section2-bottom-right:hover, #section2-top-right:hover {
     transform: scale(1.03);
 }
-/* IDEA: Non va -- mettere spazio dopo i pulsanti */
-.btnsec2::after {
-    margin-bottom: 300px;
-}
-
 
 /* IDEA: PARTE 4 - VERDE GRADIENTE - advantages of this service */
 #section3 {
@@ -417,7 +413,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 /* IDEA: FOOTER */
 #footer {
     background-color: #33475B;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 #footer i {
@@ -463,14 +459,16 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 
 #btn-contact {
     border-radius: 5px;
-    background-color: #cbd6e2;
+    background-color: #fff;
     color: #33475B;
-    padding: 3%;
-    line-height: 100%;
-    padding-left: 10px;
+    padding: 5%;
+    margin: 8%;
+    font-size: 15px;
+    font-weight: normal;
 }
 
-#btn-contact:hover.fab i:hover {
+
+#btn-contact:hover, .fab:hover {
     cursor: pointer;
 }
 
@@ -507,7 +505,6 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 }
 
 #footer-bottom-right {
-    margin-right: auto;
     width: 50%;
     float: left;
     font-weight: bold;
@@ -520,10 +517,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     text-align: right;
     margin-right: 20px;
 }
-/* IDEA: non va */
-#btn-footer {
-    margin-right:25%;
-}
+
 /* IDEA: Chatbox outside body */
 #chat {
     width: 60px;
