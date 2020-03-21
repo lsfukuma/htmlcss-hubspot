@@ -69,6 +69,11 @@ a {
     float: left;
     display: inline-block;
     padding: 30px;
+    padding-left: 25%;
+}
+
+#header-top-right button:nth-child(2){
+    padding-left: 5%;
 }
 
 #header-bottom-right a:visited {
@@ -104,6 +109,7 @@ a {
     vertical-align: middle;
     color: #33475b;
 }
+
 
 #header-top-right i {
    vertical-align: middle;
@@ -191,17 +197,17 @@ a {
     width: 70%;
     color: #33475b;
     font-weight: 100;
-
 }
 
-#section1-left button {
+.btn-orange {
     font-size: 15px;
     font-weight: bold;
     text-align: center;
     padding: 5%;
 }
 
-#section1-left p:nth-of-type(2) {
+.little-paragraph {
+    color: #33475b;
     width: 50%;
     font-size: 13px;
     padding-top: 5%;
@@ -391,21 +397,27 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     padding: 6% 0% 5% 0%;
 }
 
+.title h1 {
+    font-weight: bolder;
+}
+
 
 #section4-bottom-left {
-    width: 50%;
+    width: 60%;
     float: left;
+    padding-bottom: 10%;
 }
 
 #section4-bottom-right {
-    width: 50%;
+    width: 40%;
     float: right;
-
+    padding-bottom: 10%;
 }
 
 /* IDEA: FOOTER */
 #footer {
     background-color: #33475B;
+    padding-top: 10%;
 }
 
 #footer i {
@@ -458,7 +470,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     padding-left: 10px;
 }
 
-#btn-contact:hover {
+#btn-contact:hover.fab i:hover {
     cursor: pointer;
 }
 
@@ -477,7 +489,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     padding: 1%;
 }
 
-#footer-bottom-right p:hover ,#footer-top-bottom p:hover, .fab i:hover{
+#footer-bottom-right p:hover ,#footer-top-bottom p:hover{
     color: #7FD1DE;
     cursor: pointer;
 }
@@ -503,10 +515,14 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 }
 
 #footer-bottom-right p{
-    padding: 10%;
+    padding: 5%;
     display:inline-block;
     text-align: right;
     margin-right: 20px;
+}
+/* IDEA: non va */
+#btn-footer {
+    margin-right:25%;
 }
 /* IDEA: Chatbox outside body */
 #chat {
@@ -516,11 +532,8 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     bottom: 2%;
     left: 95%;
     background-color: #33475B;
+    background-image: url("https://static.hsappstatic.net/conversations-visitor-experience-components/static-1.2264/img/visitor-widget/launcher-open-icon.svg");
     border-radius: 50%;
-    background-position: top;
-    text-align: center;
-}
-
-#chat image{
-    bottom:60%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
