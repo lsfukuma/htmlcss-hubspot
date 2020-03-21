@@ -8,7 +8,6 @@
 .container {
     width: 1080px;
     margin: auto;
-    height: 100%
 }
 
 .clearfix::after {
@@ -132,7 +131,7 @@ a {
 
 #header-bottom-right {
     width: 70%;
-    height: 100px;
+    padding-top: 100px;
     background-color: white;
     float: left;
     position: relative;
@@ -173,24 +172,25 @@ a {
 #section1-left {
     margin: left;
     width: 50%;
-    height: 600px;
     float: left;
-    color: #33475b;
     padding-top: 10%;
     padding-bottom: 10%;
 }
 
-#section1-left h1 {
+.title {
     font-size: 40px;
     font-weight: 900;
     padding-bottom: 5%;
+    color: #33475b;
 }
 
-#section1-left p {
+.big-paragraph{
     letter-spacing: 0,5px;
     font-weight: lighter;
     padding-bottom: 5%;
     width: 70%;
+    color: #33475b;
+    font-weight: 100;
 
 }
 
@@ -342,10 +342,10 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 }
 
 #section3-top {
-    width: 100%;
+    width: 80%;
     text-align:center;
-    padding: 5%;
-    padding-bottom: 10px;
+    margin: auto;
+    padding: 10% 5% 5% 5%;
 }
 
 .section3-middle {
@@ -377,47 +377,34 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     padding-bottom: 60px;
 }
 
-
 /* IDEA: PARTE 5 - customers and testimonials */
-#section4 {
-    padding-top: 100px;
-    height: 800px;
-    background-color: #fff;
-}
 
 #section4-top-left {
-    width: calc(100%/3);
-    background-color: lightgreen;
+    width: 45%;
     float: left;
+    padding: 10% 5% 10% 0;
 }
 
 #section4-top-right {
-    width: calc((100%/3)*2);
-    background-image: url("img/section4-img1.png");
-    background-position: right;
-    background-size: cover;
+    width: 55%;
     float: right;
-    height: 50px;
+    padding: 6% 0% 5% 0%;
 }
 
-#section-top-right img {
-
-}
 
 #section4-bottom-left {
     width: 50%;
     float: left;
-
 }
+
 #section4-bottom-right {
     width: 50%;
-    
     float: right;
+
 }
 
 /* IDEA: FOOTER */
 #footer {
-    height: 600px;
     background-color: #33475B;
 }
 
@@ -444,28 +431,24 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 
 #footer-top-collumn1 {
     width: calc((100%)/4);
-    height: 400px;
     float: left;
 }
 
 #footer-top-collumn2 {
     width: calc((100%)/4);
-    height: 400px;
     float: left;
 }
 
 #footer-top-collumn3 {
     width: calc((100%)/4);
-    height: 400px;
     float: left;
 }
 
 #footer-top-collumn4 {
     width: calc((100%)/4);
-    height: 400px;
     float: left;
 }
-/* IDEA: manca hover, magari fare una classe hover? */
+
 #btn-contact {
     border-radius: 5px;
     background-color: #cbd6e2;
@@ -475,10 +458,13 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     padding-left: 10px;
 }
 
+#btn-contact:hover {
+    cursor: pointer;
+}
+
 #footer-top-bottom {
     width: 100%;
     text-align: center;
-    height: 100px;
     float: left;
     border-bottom: 1px solid #cbd6e2;
 }
@@ -491,7 +477,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     padding: 1%;
 }
 
-#footer-bottom-right p:hover ,#footer-top-bottom p:hover {
+#footer-bottom-right p:hover ,#footer-top-bottom p:hover, .fab i:hover{
     color: #7FD1DE;
     cursor: pointer;
 }
@@ -499,7 +485,6 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 #footer-bottom-left {
     margin: auto;
     width: 50%;
-    height: 100px;
     float: left;
 }
 
@@ -512,7 +497,6 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 #footer-bottom-right {
     margin-right: auto;
     width: 50%;
-    height: 100px;
     float: left;
     font-weight: bold;
     color: #FFFFFF;
@@ -526,8 +510,8 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
 }
 /* IDEA: Chatbox outside body */
 #chat {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     bottom: 2%;
     left: 95%;
@@ -535,4 +519,8 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     border-radius: 50%;
     background-position: top;
     text-align: center;
+}
+
+#chat image{
+    bottom:60%;
 }
