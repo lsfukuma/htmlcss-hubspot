@@ -166,7 +166,7 @@ a {
 .logbutton:hover, #header-top-right .orange-button:hover {
     opacity: 0.5;
 }
-
+/* IDEA: jumbotrone */
 #section1 {
     background-color: #FFF2EE;
     background-image: url("img/Background.png");
@@ -214,8 +214,7 @@ a {
 }
 
 
-/* IDEA: PARTE 3 del sito -- services
-quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scrittura */
+/* IDEA: PARTE 3 del sito -- services */
 
 #section2 {
     padding-top: 5%;
@@ -386,11 +385,20 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     float: left;
     padding: 10% 5% 10% 0;
 }
-
-#section4-top-right {
+/* prima - immagine intera dei clienti : #section4-top-right {
     width: 55%;
     float: right;
     padding: 6% 0% 5% 0%;
+} */
+
+.section4-top-right {
+    padding-top: 10%;
+}
+
+.section4-top-right img {
+    width: calc(55%/4);
+    float: left;
+    padding: 2%;
 }
 
 .title h1 {
@@ -527,7 +535,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     height: 60px;
     position: fixed;
     bottom: 2%;
-    left: 95%;
+    right: 5%;
     background-color: #33475B;
     background-image: url("https://static.hsappstatic.net/conversations-visitor-experience-components/static-1.2264/img/visitor-widget/launcher-open-icon.svg");
     border-radius: 50%;
