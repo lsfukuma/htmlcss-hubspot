@@ -296,12 +296,12 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     float: right;
     color: #33475B;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     position: relative;
     background-color: white;
     padding: 5% 5% 10% 5%;
-
 }
+
 #btn-sec2-top {
     padding: 2% 10% 2% 10%;
     font-size: 15px;
@@ -484,7 +484,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     color: #cbd6e2;
     font-size: 20px;
     font-weight: 400;
-    padding: 1%;
+    padding: 5% 1% 5% 1%;
 }
 
 #footer-bottom-right p:hover ,#footer-top-bottom p:hover{
@@ -496,6 +496,7 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     margin: auto;
     width: 50%;
     float: left;
+    padding: 3% 1% 3% 0%;
 }
 
 #footer-bottom-left p:nth-child(2) {
@@ -509,6 +510,8 @@ quello che manca: spazio dopo i bottoni, hr del primo riquadro accanto alla scri
     float: left;
     font-weight: bold;
     color: #FFFFFF;
+    padding: 3% 0% 3% 0%;
+    text-align: right;
 }
 
 #footer-bottom-right p{
